@@ -125,7 +125,7 @@
   var themeBtn = document.getElementById("theme-toggle");
   var metaTheme = document.querySelector('meta[name="theme-color"]');
 
-  function curTheme() { return root.getAttribute("data-theme") || "dark"; }
+  function curTheme() { return root.getAttribute("data-theme") || "light"; }
 
   function paintChrome(t) {
     if (metaTheme) metaTheme.setAttribute("content", t === "light" ? "#F4EDDE" : "#1B1712");

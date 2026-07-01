@@ -100,6 +100,10 @@
 .service__img img{width:100%;height:100%;object-fit:cover;transition:transform var(--t-img) var(--ease)}
 .service:hover .service__img img{transform:scale(1.05)}
 
+/* thumbs-up avatar above the "Design + code" note (selected work) */
+.section__note-wrap{display:flex;flex-direction:column;align-items:center;gap:8px}
+.work-guy{width:clamp(96px,9vw,122px);height:auto;filter:drop-shadow(4px 5px 0 rgba(0,0,0,.12))}
+
 /* =========================================================
    COMPONENT — LIGHTBOX
    ========================================================= */

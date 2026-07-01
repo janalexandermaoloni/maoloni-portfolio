@@ -44,7 +44,7 @@
   /* ---- light / dark theme toggle ---- */
   var themeBtn = document.getElementById("theme-toggle");
   var metaTheme = document.querySelector('meta[name="theme-color"]');
-  function curTheme() { return root.getAttribute("data-theme") || "dark"; }
+  function curTheme() { return root.getAttribute("data-theme") || "light"; }
   function paintChrome(t) {
     if (metaTheme) metaTheme.setAttribute("content", t === "light" ? "#F4EDDE" : "#1B1712");
     if (themeBtn) themeBtn.setAttribute("aria-label", t === "light" ? "Switch to dark theme" : "Switch to light theme");
