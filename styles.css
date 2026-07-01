@@ -431,6 +431,11 @@ html.theming,html.theming *{
   .work__list{grid-template-columns:1fr}
   .facts{grid-template-columns:1fr 1fr}
   .footer__inner{flex-direction:column;text-align:center;gap:10px}
+  /* keep the waving avatar + doodle arrow tucked onto the art frame so
+     they don't reach up into the copy/buttons once the layout stacks */
+  .hero__art{margin-top:24px}
+  .hero__art-guy{bottom:auto;top:-46px;left:auto;right:16px;width:88px;margin-bottom:0}
+  .doodle--arrow{top:-30px;right:auto;left:14px;width:46px;height:46px}
 }
 @media (max-width:460px){
   .hero__meta{gap:6px 16px}
