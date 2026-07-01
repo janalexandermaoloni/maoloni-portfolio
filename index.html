@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexander Maoloni, designer &amp; developer · Hexsole studio</title>
+  <meta name="description" content="Alexander Maoloni, independent designer &amp; developer running Hexsole, a tiny studio crafting websites, software and brands. Often shipped in under 24 hours." />
+  <meta name="author" content="Alexander Maoloni" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <meta name="theme-color" content="#1B1712" />
+  <!-- set theme before paint (external file, no inline script) -->
+  <script src="theme-init.js"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alexander Maoloni, designer &amp; developer" />
+  <meta property="og:description" content="Websites, software and brands, handmade by a tiny studio called Hexsole." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero.svg" />
+  <meta property="og:url" content="https://maoloni.example/index.html" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <!-- paper grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- scroll progress -->
+  <div class="scrollbar" aria-hidden="true"><span id="scroll-progress"></span></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="brand" aria-label="Alexander Maoloni, home">
+        <span class="brand__star" aria-hidden="true">;)</span>
+        <span class="brand__name">Maoloni</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html" class="active"><span>Home</span></a>
+        <a href="bio.html"><span>Bio</span></a>
+        <a href="portfolio.html"><span>Portfolio</span></a>
+        <a href="contatti.html"><span>Contatti</span></a>
+      </nav>
+
+      <a href="contatti.html" class="btn btn--ink nav__cta">
+        Contattami
+        <svg viewBox="0 0 24 24" class="arrow" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Toggle light / dark">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.6A8 8 0 1 1 9.4 4a6.5 6.5 0 0 0 10.6 10.6Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </button>
+
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="kicker reveal" data-reveal>
+            <span class="kicker__hand">hey, I'm Alexander</span>
+            <svg class="kicker__wave" viewBox="0 0 40 20" aria-hidden="true"><path d="M2 12c4-8 8 8 12 0s8-8 12 0 8 8 12 0" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          </p>
+
+          <h1 class="hero__title">
+            <span class="line reveal" data-reveal>I craft</span>
+            <span class="line reveal" data-reveal><em class="mark mark--blue">websites<svg class="ul" viewBox="0 0 220 16" preserveAspectRatio="none" aria-hidden="true"><path d="M3 9c40-7 150-9 214-3" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></em>,</span>
+            <span class="line reveal" data-reveal><em class="mark mark--terra">software</em></span>
+            <span class="line reveal" data-reveal>&amp; <em class="mark mark--sage">brands<svg class="ul" viewBox="0 0 180 16" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8c50 6 120 6 174-2" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></em></span>
+            <span class="line line--muted reveal" data-reveal>from first sketch to launch.</span>
+          </h1>
+
+          <p class="hero__sub reveal" data-reveal>
+            Independent designer &amp; developer running <strong>Hexsole</strong>, a tiny studio
+            that ships polished sites and products, often in under 24&nbsp;hours.
+          </p>
+
+          <div class="hero__cta reveal" data-reveal>
+            <a href="#work" class="btn btn--ink">
+              See selected work
+              <svg viewBox="0 0 24 24" class="arrow" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="mailto:alexmaoloni64@gmail.com" class="btn btn--ghost">Let's talk</a>
+          </div>
+
+          <ul class="hero__meta reveal" data-reveal>
+            <li><span class="dot dot--sage"></span> Available for select projects</li>
+            <li><span class="dot dot--blue"></span> Remote · worldwide</li>
+            <li><span class="dot dot--terra"></span> Hexsole studio</li>
+          </ul>
+        </div>
+
+        <div class="hero__art reveal" data-reveal>
+          <div class="hero__art-frame" data-parallax="0.06">
+            <img src="assets/hero.svg" alt="Illustration of a cozy creative desk with a laptop, coffee, plant and design tools" width="1024" height="768" />
+          </div>
+          <span class="sticker sticker--tl">since 2024</span>
+          <span class="sticker sticker--br">0% templates</span>
+          <svg class="doodle doodle--arrow" viewBox="0 0 80 80" aria-hidden="true"><path d="M8 12c22 6 40 22 46 46M54 58l2-16M54 58l-16 2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="doodle doodle--star" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2v36M2 20h36M7 7l26 26M33 7L7 33" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <img class="hero__art-guy" src="assets/guy-wave.svg" alt="Illustration of Alexander waving" />
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= SCROLL NOTE (paper annotation, scrolls with page) ================= -->
+    <section class="scroll-band" aria-hidden="true">
+      <span class="scroll-band__note">scroll <span class="scroll-band__arrow">&#8595;</span></span>
+    </section>
+
+    <!-- ================= WHAT I DO ================= -->
+    <section class="services section" id="services">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow reveal" data-reveal><span class="hand">what I do</span></p>
+          <h2 class="section__title reveal" data-reveal>Three things, done properly.</h2>
+        </div>
+
+        <div class="services__grid">
+          <article class="service reveal" data-reveal>
+            <div class="service__no">01</div>
+            <div class="service__img"><img src="assets/svc-web.svg" alt="Illustration representing websites and web design" width="1024" height="768" loading="lazy" /></div>
+            <h3>Websites &amp; web design</h3>
+            <p>Marketing sites, landing pages and portfolios, designed and hand-built to load fast and feel alive.</p>
+          </article>
+
+          <article class="service reveal" data-reveal>
+            <div class="service__no">02</div>
+            <div class="service__img"><img src="assets/svc-soft.svg" alt="Illustration representing software and apps" width="1024" height="768" loading="lazy" /></div>
+            <h3>Software &amp; apps</h3>
+            <p>Web apps and product interfaces, from clickable prototype to production, thoughtfully engineered.</p>
+          </article>
+
+          <article class="service reveal" data-reveal>
+            <div class="service__no">03</div>
+            <div class="service__img"><img src="assets/svc-brand.svg" alt="Illustration representing branding and visual identity" width="1024" height="768" loading="lazy" /></div>
+            <h3>Branding &amp; visual</h3>
+            <p>Logos, identities and design systems that make small teams look properly established.</p>
+            <img class="service__guy" src="assets/guy-peek.png" alt="" aria-hidden="true" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SELECTED WORK ================= -->
+    <section class="work section" id="work">
+      <img class="peeker peeker--work" src="assets/guy-thumbs.svg" alt="" aria-hidden="true" />
+      <div class="wrap">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow reveal" data-reveal><span class="hand">selected work</span></p>
+            <h2 class="section__title reveal" data-reveal>A few things I&nbsp;made<br/>with my own hands.</h2>
+          </div>
+          <p class="section__note reveal" data-reveal>Design + code, start to finish. Swap these with your real projects any time.</p>
+        </div>
+
+        <div class="work__list">
+          <article class="project reveal" data-reveal>
+            <a class="project__media" href="https://www.orbitweb.net" target="_blank" rel="noopener" aria-label="Orbit, OrbitWeb, the generative web engine">
+              <img src="assets/work-web.svg" alt="Illustration of a colorful browser window and website layout" width="1024" height="768" />
+              <span class="project__view">View <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <div class="project__meta">
+              <h3 class="project__name">Orbit</h3>
+              <span class="project__tag tag--blue">Web</span>
+              <span class="project__year">2026</span>
+            </div>
+            <p class="project__desc">Brand &amp; marketing site for OrbitWeb, a generative engine for building the web.</p>
+            <a class="project__case" href="lavoro-1.html">Read the case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+
+          <article class="project project--offset reveal" data-reveal>
+            <a class="project__media" href="https://www.fieldsnotesai.com" target="_blank" rel="noopener" aria-label="FieldNote AI, intelligent field reporting">
+              <img src="assets/work-app.svg" alt="Illustration of a smartphone showing a clean app interface" width="1024" height="768" />
+              <span class="project__view">View <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <div class="project__meta">
+              <h3 class="project__name">Fieldnote</h3>
+              <span class="project__tag tag--terra">Software</span>
+              <span class="project__year">2025</span>
+            </div>
+            <p class="project__desc">Product &amp; front-end for FieldNote AI, turns voice notes &amp; site photos into finished field reports for engineers.</p>
+            <a class="project__case" href="lavoro-2.html">Read the case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+
+          <article class="project reveal" data-reveal>
+            <a class="project__media" href="https://sole.digital" target="_blank" rel="noopener" aria-label="Sole, Sole DXB culture festival">
+              <img src="assets/work-brand.svg" alt="Illustration of a brand identity board with logo, swatches and tools" width="1024" height="768" />
+              <span class="project__view">View <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <div class="project__meta">
+              <h3 class="project__name">Sole</h3>
+              <span class="project__tag tag--sage">Branding</span>
+              <span class="project__year">2026</span>
+            </div>
+            <p class="project__desc">Site &amp; brand work for Sole DXB, the Middle East's leading street-culture festival.</p>
+            <a class="project__case" href="lavoro-3.html">Read the case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STUDIO / ABOUT ================= -->
+    <section class="about section" id="studio">
+      <div class="wrap about__grid">
+        <div class="about__art reveal" data-reveal>
+          <div class="about__art-frame" data-parallax="0.05">
+            <img src="assets/guy-arms.svg" alt="Flat illustrated portrait of Alexander Maoloni" width="819" height="1024" />
+          </div>
+        </div>
+
+        <div class="about__copy">
+          <p class="eyebrow reveal" data-reveal><span class="hand">the studio</span></p>
+          <h2 class="section__title reveal" data-reveal>One person,<br/>the whole craft.</h2>
+          <p class="about__lead reveal" data-reveal>
+            I'm Alexander Maoloni, a designer <em>and</em> developer. Under the name
+            <strong>Hexsole</strong> I run a one-person studio where the same head that
+            draws the layout also writes the code that ships it.
+          </p>
+          <p class="reveal" data-reveal>
+            No hand-offs, no lost-in-translation, no bloated templates. Just tight,
+            considered work made fast, because small teams deserve to look big, and
+            good ideas shouldn't wait weeks for a website.
+          </p>
+          <ul class="facts reveal" data-reveal>
+            <li><strong>&lt;24h</strong><span>typical turnaround</span></li>
+            <li><strong>100%</strong><span>custom, 0% template</span></li>
+            <li><strong>2-in-1</strong><span>design &amp; code, one person</span></li>
+            <li><strong>∞</strong><span>revisions until it's right</span></li>
+          </ul>
+          <div class="hero__cta reveal mt-lg" data-reveal>
+            <a href="bio.html" class="btn btn--ink">
+              Read the full bio
+              <svg viewBox="0 0 24 24" class="arrow" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="cv.pdf" download class="btn btn--ghost">Download CV (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="process section" id="process">
+      <img class="peeker peeker--process" src="assets/guy-shaka.svg" alt="" aria-hidden="true" />
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow reveal" data-reveal><span class="hand">how I work</span></p>
+          <h2 class="section__title reveal" data-reveal>A simple ritual,<br/>every single project.</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal" data-reveal>
+            <span class="step__no">01</span>
+            <h3>Discover</h3>
+            <p>We talk through goals, audience and scope. I map the whole thing before touching a single pixel.</p>
+          </li>
+          <li class="step reveal" data-reveal>
+            <span class="step__no">02</span>
+            <h3>Design</h3>
+            <p>Layout, type and illustration come together in fast, sharp iterations you actually get to see.</p>
+          </li>
+          <li class="step reveal" data-reveal>
+            <span class="step__no">03</span>
+            <h3>Build</h3>
+            <p>Clean, hand-written code. Motion and micro-detail added exactly where they earn their keep.</p>
+          </li>
+          <li class="step reveal" data-reveal>
+            <span class="step__no">04</span>
+            <h3>Ship</h3>
+            <p>Launch, polish, hand over the keys. Often within a single day of starting.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact section" id="contact">
+      <div class="wrap contact__inner">
+        <img class="contact__avatar reveal" data-reveal src="assets/guy-point.png" alt="Flat illustration of Alexander pointing" width="220" height="275" />
+        <p class="eyebrow eyebrow--center reveal" data-reveal><span class="hand">say hi</span></p>
+        <h2 class="contact__title reveal" data-reveal>Let's build<br/>something good.</h2>
+        <p class="contact__sub reveal" data-reveal>
+          Got a project, a rough idea, or just want to say hello? My inbox is open ,
+          and I usually reply the same day.
+        </p>
+        <a href="mailto:alexmaoloni64@gmail.com" class="btn btn--big reveal" data-reveal>
+          alexmaoloni64@gmail.com
+          <svg viewBox="0 0 24 24" class="arrow" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <ul class="socials reveal" data-reveal>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+
+        <!-- quick contact form -->
+        <form class="form reveal" data-reveal data-contact-form novalidate>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="h-nome">Nome <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="h-nome" name="nome" autocomplete="name" required placeholder="Il tuo nome" />
+            </div>
+            <div class="form__field">
+              <label for="h-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="h-email" name="email" autocomplete="email" required placeholder="nome@email.com" />
+            </div>
+          </div>
+          <div class="form__field">
+            <label for="h-oggetto">Oggetto <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="h-oggetto" name="oggetto" required placeholder="Di cosa si tratta?" />
+          </div>
+          <div class="form__field">
+            <label for="h-messaggio">Messaggio <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="h-messaggio" name="messaggio" required placeholder="Raccontami il progetto..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--ink">
+            Invia messaggio
+            <svg viewBox="0 0 24 24" class="arrow" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form__success" hidden>Grazie! Il tuo messaggio è stato inviato, ti rispondo il prima possibile. ✦</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER (shared) ================= -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__grid">
+      <div class="site-footer__brand">
+        <span class="brand"><span class="brand__star" aria-hidden="true">;)</span> Maoloni</span>
+        <p class="site-footer__tag">Independent designer &amp; developer crafting websites, software &amp; brands, under the name Hexsole.</p>
+        <p class="site-footer__contact"><a href="mailto:alexmaoloni64@gmail.com">alexmaoloni64@gmail.com</a><br/><a href="tel:+393510000000">+39 351 000 0000</a></p>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="bio.html">Bio</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contatti.html">Contatti</a>
+          <a href="privacy.html">Privacy &amp; Termini</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="site-footer__social">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.4 8.65 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3-2 0-2.3 1.57-2.3 3.2V21h-4z" fill="currentColor"/></svg> LinkedIn</a>
+          <a href="https://www.behance.net/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6H3v12h6.3c2.4 0 4.2-1.2 4.2-3.5 0-1.6-.9-2.6-2.2-3 .9-.4 1.6-1.3 1.6-2.6C12.9 6.9 11.2 6 9 6Zm-.4 9.7H5.6v-3h3c1 0 1.7.5 1.7 1.5s-.7 1.5-1.7 1.5Zm-.2-5.1H5.6V7.9h2.7c.9 0 1.5.4 1.5 1.3s-.6 1.4-1.4 1.4ZM21 12.6c0-2.6-1.5-4.6-4.2-4.6-2.6 0-4.4 2-4.4 4.6 0 2.7 1.7 4.5 4.5 4.5 2.1 0 3.6-1 4-2.6h-2.1c-.3.6-.9.9-1.8.9-1.1 0-1.9-.7-2-1.9H21zM15 11.5c.2-1 .9-1.7 1.9-1.7s1.6.7 1.7 1.7zM15.5 6.5h4V8h-4z" fill="currentColor"/></svg> Behance</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg> Instagram</a>
+          <a href="https://github.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" fill="currentColor"/></svg> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap site-footer__bottom">
+      <span>© 2026 Alexander Maoloni, Tutti i diritti riservati</span>
+      <span class="site-footer__hand">made by hand ✦</span>
+      <a href="privacy.html">Privacy Policy &amp; Termini</a>
+    </div>
+  </footer>
+
+  <!-- cookie banner, first visit, home only, saved in localStorage -->
+  <div class="cookie" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+    <div class="cookie__inner">
+      <p class="cookie__text"><strong>Cookies &amp; privacy.</strong> This site uses only essential local storage (your theme and this notice) plus third-party embeds. Read the <a href="privacy.html">Privacy &amp; Cookie Policy</a>.</p>
+      <div class="cookie__actions">
+        <button class="btn btn--ink" id="accept-cookies" type="button">Accetta</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="features.js"></script>
+</body>
+</html>
